@@ -16,8 +16,8 @@ class TestCodeClanStudent < MiniTest::Test
 
   def test_student_can_speak
     code_clan_student = CodeClanStudent.new('Monty', 'E31')
-    code_clan_student.talk = "I can talk!"
-    assert_equal("I can talk!", code_clan_student.talk)
+    #code_clan_student.talk("I sniff glue!")
+    assert_equal("I sniff glue!", code_clan_student.talk)
   end
 
 

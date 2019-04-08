@@ -7,9 +7,9 @@ class CodeClanStudent
     @cohort_name = cohort_name
   end
 
-  # def student_name(student_name)
-  #   @student_name = student_name
-  # end
+  def talk
+    return "I sniff glue!"
+  end
 
 
 end
