@@ -6,7 +6,7 @@ class Team
     @team_name = team_name
     @players = players
     @coach = coach
-    @points = points
+    @points = 0
   end
 
 def coach_name_change(gaffer)
@@ -17,8 +17,8 @@ end
     @players.push(new_signing)
   end
 
-  def points
-    @team_name += 3 if @points == true
+  def result(result)
+    @points += 3 if result == "win"
 
   end
 end
