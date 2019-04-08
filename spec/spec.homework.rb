@@ -20,5 +20,10 @@ class TestCodeClanStudent < MiniTest::Test
     assert_equal("I sniff glue!", code_clan_student.talk)
   end
 
+  def test_favourite_language
+    code_clan_student = CodeClanStudent.new('Monty', 'E31')
+    #code_clan_student.favourite_language("Ruby")
+    assert_equal("I love Ruby?", code_clan_student.favourite_language("Ruby"))
+  end
 
 end

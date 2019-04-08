@@ -11,5 +11,8 @@ class CodeClanStudent
     return "I sniff glue!"
   end
 
+  def favourite_language(language)
+    return "I love #{language}?"
+  end
 
 end
