@@ -27,7 +27,7 @@ class TestTeam < MiniTest::Test
   def test_add_new_player
     team = Team.new('Spurs',['regen_1', 'regen_2', 'regen_3'], 'Sven')
     team = team.add_new_player('regen_4')
-    assert_equal(true, team.players.include? 'regen_4')
+    assert_equal(4, team.players.new_signing)
 
   end
 
