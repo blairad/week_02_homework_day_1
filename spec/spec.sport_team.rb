@@ -35,5 +35,9 @@ class TestTeam < MiniTest::Test
     assert_equal(false, team.players.include?('regen_5'))
   end
 
+  def test_points_for_win
+    team = Team.new('Spurs',['regen_1', 'regen_2', 'regen_3'], 'Sven')
+    assert_equal(3, team.points)
+  end
 
 end
